@@ -14,6 +14,10 @@ const Routers = [
         component: (resolve) => require(['./views/about.vue'], resolve)
     },
     {
+        path: '/user/:id',
+        component: (resolve) => require(['./views/user.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/index'
     }
